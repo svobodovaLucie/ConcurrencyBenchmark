@@ -15,9 +15,6 @@ int main() {
     pthread_t tid;
     int value = 0;
 
-    printf("Enter a value: ");
-    scanf("%d", &value);
-
     pthread_create(&tid, NULL, print_message, &value);
     printf("&value=%p\n", &value);
    
